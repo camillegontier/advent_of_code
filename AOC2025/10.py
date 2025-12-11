@@ -83,7 +83,8 @@ with open(file_name, 'r') as f:
             temp.append(temp_)
         inputs[line_idx] = temp
 
-
+import time
+start = time.time()
 count = 0
 for line in range(n_line):       
     print(line)     
@@ -97,5 +98,7 @@ for line in range(n_line):
     
    
     count = count + opt.fun
+end = time.time()
+print(end - start)
 print(count)
     
